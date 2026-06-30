@@ -27,10 +27,10 @@ const CONFIG = {
   groomMotherEN: "Mrs. Vann Malen",
   groomMotherKM: "លោកស្រី វ៉ាន់ ម៉ាឡែន",
   brideFatherEN: "H.E. Yun Narong",
-  brideFatherKM: "ឯកឧត្តម ចាន់ សុផល",
+  brideFatherKM: "ឯកឧត្តម យន់ ណារុង",
   brideMotherEN: "H.E. Seng Narom",
   brideMotherKM: "លោកជំទាវ សេង ណារុំ",
-  
+  */
   groomFatherEN: "",
   groomFatherKM: "",
   groomMotherEN: "",
