@@ -30,7 +30,7 @@ const CONFIG = {
   brideFatherKM: "ឯកឧត្តម យន់ ណារុង",
   brideMotherEN: "H.E. Seng Narom",
   brideMotherKM: "លោកជំទាវ សេង ណារុំ",
-  */
+  /*
   groomFatherEN: "",
   groomFatherKM: "",
   groomMotherEN: "",
@@ -39,7 +39,7 @@ const CONFIG = {
   brideFatherKM: "",
   brideMotherEN: "",
   brideMotherKM: "",
-
+  */
   // Section Toggles (true = show, false = hide completely)
   // Change showParents to "true" to display parent information
   showParents: true,
