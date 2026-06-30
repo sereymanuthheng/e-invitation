@@ -21,7 +21,7 @@ const CONFIG = {
   // Parents Info
   // Set to empty string "" to hide any specific name
   // Uncomment the lines below if you want to display parents' names
-  /*
+  
   groomFatherEN: "Mr. Heng Houth",
   groomFatherKM: "លោក ហេង ហួត",
   groomMotherEN: "Mrs. Vann Malen",
@@ -30,7 +30,7 @@ const CONFIG = {
   brideFatherKM: "ឯកឧត្តម ចាន់ សុផល",
   brideMotherEN: "H.E. Seng Narom",
   brideMotherKM: "លោកជំទាវ សេង ណារុំ",
-  */
+  
   groomFatherEN: "",
   groomFatherKM: "",
   groomMotherEN: "",
