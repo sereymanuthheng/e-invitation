@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <!-- SEO & Social Sharing Metadata -->
+  <title>Engagement Invitation | Heng Sereymanuth & Yun Darachan</title>
+  <meta name="description"
+    content="You're cordially invited to celebrate the engagement ceremony of Rithy Samnang and Sopheary Devi. Date: June 22, 2026. Venue: OCIC Wedding Plaza." />
+  <meta name="author" content="Manuth & Darachan" />
+
+  <!-- Open Graph / Facebook / Telegram -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="💌 Engagement Invitation — Heng Sereymanuth & Yun Darachan" />
+  <meta property="og:description"
+    content="We invite you to celebrate our special day on Monday, June 22, 2026, at OCIC Wedding Plaza." />
+  <meta property="og:image"
+    content="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=1200" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="💌 Engagement Invitation — Manuth & Darachan" />
+  <meta name="twitter:description"
+    content="We invite you to celebrate our special day on Monday, June 22, 2026, at OCIC Wedding Plaza." />
+  <meta name="twitter:image"
+    content="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=1200" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="no-scroll lang-km">
+
+  <!-- 1. ROSE PETALS BACKGROUND EFFECT -->
+  <div id="petals-container"></div>
+
+  <!-- 2. ENVELOPE / INVITE GATE COVER SCREEN -->
+  <div id="envelope">
+    <div class="envelope-card">
+      <div class="envelope-ornament">❀ ⚜ ❀</div>
+      <div class="envelope-greet" data-en="Engagement Invitation" data-km="លិខិតអញ្ជើញសិរីមង្គលភ្ជាប់ពាក្យ">
+        លិខិតអញ្ជើញសិរីមង្គលភ្ជាប់ពាក្យ</div>
+
+      <h1 class="envelope-names serif-text">
+        <span class="val-groom-name">ហេង សិរីម៉ានុត</span>
+        <br />
+        <span style="font-size: 20px; color: var(--color-primary);">&amp;</span>
+        <br />
+        <span class="val-bride-name">យន់ តារាច័ន្ទ</span>
+      </h1>
+
+      <div class="section-divider" style="margin: 20px auto;"></div>
+
+      <p style="font-size: 14px; margin-bottom: 30px; color: var(--color-text-light);"
+        data-en="Together with their families" data-km="រួមជាមួយក្រុមគ្រួសារទាំងសងខាង">
+        រួមជាមួយក្រុមគ្រួសារទាំងសងខាង
+      </p>
+
+      <button id="open-invitation-btn" class="envelope-btn" data-en="Open Invitation" data-km="បើកសំបុត្រអញ្ជើញ">
+        បើកសំបុត្រអញ្ជើញ
+      </button>
+    </div>
+  </div>
+
+  <!-- 3. FLOATING SETTINGS CONTROLS (Always Visible) -->
+  <div class="floating-controls">
+    <!-- Language Toggle Pill -->
+    <div class="lang-selector">
+      <button class="lang-btn active" data-lang="km">KM</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+
+    <!-- Music Player Play/Pause Circle Toggle -->
+    <button id="music-toggle-btn" class="control-btn" aria-label="Toggle background music">
+      🎵
+    </button>
+  </div>
+
+  <!-- 4. MAIN INVITATION FRAME WRAPPER -->
+  <main class="main-wrapper">
+
+    <!-- HERO BANNER SECTION -->
+    <header id="hero-banner" class="no-scroll">
+      <p class="hero-subtitle" data-en="Save the Date" data-km="សូមរក្សាទុកកាលបរិច្ឆេទ">សូមរក្សាទុកកាលបរិច្ឆេទ</p>
+      <h2 class="hero-names serif-text">
+        <span class="val-groom-name">ហេង សិរីម៉ានុត</span> &amp; <span class="val-bride-name">យន់ តារាច័ន្ទ</span>
+      </h2>
+      <p class="hero-date" data-en="June 22, 2026" data-km="២២ មិថុនា ២០២៦">២២ មិថុនា ២០២៦</p>
+    </header>
+
+    <!-- PARENTS & PROFILES SECTION -->
+    <section id="parents-section" class="reveal-item">
+      <div class="invitation-card">
+        <p class="parent-title" data-en="Groom's Parents" data-km="មាតាបិតាខាងកូនប្រុស">មាតាបិតាខាងកូនប្រុស</p>
+        <div class="text-line-wrapper">
+          <p id="groom-father" class="parent-name" data-en="Mr. Bun Narith" data-km="លោក ប៊ុន ណារិទ្ធ">លោក ប៊ុន ណារិទ្ធ
+          </p>
+        </div>
+        <div class="text-line-wrapper">
+          <p id="groom-mother" class="parent-name" data-en="Mrs. Heng Sreyneang" data-km="អ្នកស្រី ហេង ស្រីនាង">អ្នកស្រី
+            ហេង ស្រីនាង</p>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <p class="parent-title" data-en="Bride's Parents" data-km="មាតាបិតាខាងកូនស្រី">មាតាបិតាខាងកូនស្រី</p>
+        <div class="text-line-wrapper">
+          <p id="bride-father" class="parent-name" data-en="Mr. Chan Sophal" data-km="លោក ចាន់ សុផល">លោក ចាន់ សុផល</p>
+        </div>
+        <div class="text-line-wrapper">
+          <p id="bride-mother" class="parent-name" data-en="Mrs. Keo Malis" data-km="អ្នកស្រី កែវ ម្លិះ">អ្នកស្រី កែវ
+            ម្លិះ</p>
+        </div>
+      </div>
+
+      <div class="couple-wrapper" style="margin-top: 50px;">
+        <!-- Groom profile details -->
+        <div id="groom-side" class="couple-side reveal-item">
+          <div id="groom-img-wrapper" class="couple-avatar">
+            <img id="groom-img" src="" alt="Groom Samnang" />
+          </div>
+          <span class="couple-role" data-en="The Groom" data-km="កូនប្រុស">កូនប្រុស</span>
+          <h3 class="couple-name serif-text val-groom-name">ហេង សិរីម៉ានុត</h3>
+        </div>
+
+        <!-- Bride profile details -->
+        <div id="bride-side" class="couple-side reveal-item">
+          <div id="bride-img-wrapper" class="couple-avatar">
+            <img id="bride-img" src="" alt="Bride Devi" />
+          </div>
+          <span class="couple-role" data-en="The Bride" data-km="កូនស្រី">កូនស្រី</span>
+          <h3 class="couple-name serif-text val-bride-name">យន់ តារាច័ន្ទ</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- COUNTDOWN CLOCK SECTION -->
+    <section id="countdown-section" class="reveal-item">
+      <h3 class="section-title" data-en="Counting Down" data-km="រង់ចាំថ្ងៃពិសេស">រង់ចាំថ្ងៃពិសេស</h3>
+      <p class="section-subtitle" data-en="Every second brings us closer to our beautiful journey together."
+        data-km="រាល់វិនាទីដែលកន្លងផុតទៅ គឺខិតជិតដល់ថ្ងៃដែលពួកយើងរួមដំណើរជីវិតជាមួយគ្នា">រាល់វិនាទីដែលកន្លងផុតទៅ
+        គឺខិតជិតដល់ថ្ងៃដែលពួកយើងរួមដំណើរជីវិតជាមួយគ្នា</p>
+
+      <div class="countdown-container">
+        <div class="countdown-box">
+          <div id="days" class="countdown-num">00</div>
+          <div class="countdown-label" data-en="Days" data-km="ថ្ងៃ">ថ្ងៃ</div>
+        </div>
+        <div class="countdown-box">
+          <div id="hours" class="countdown-num">00</div>
+          <div class="countdown-label" data-en="Hours" data-km="ម៉ោង">ម៉ោង</div>
+        </div>
+        <div class="countdown-box">
+          <div id="minutes" class="countdown-num">00</div>
+          <div class="countdown-label" data-en="Mins" data-km="នាទី">នាទី</div>
+        </div>
+        <div class="countdown-box">
+          <div id="seconds" class="countdown-num">00</div>
+          <div class="countdown-label" data-en="Secs" data-km="វិនាទី">វិនាទី</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- SCHEDULE TIMELINE SECTION -->
+    <section id="schedule-section" class="reveal-item">
+      <h3 class="section-title" data-en="Ceremony Schedule" data-km="កម្មវិធីនៃពិធីមង្គល">កម្មវិធីនៃពិធីមង្គល</h3>
+      <p class="section-subtitle" data-en="Please join us on time to witness our special ceremony milestones."
+        data-km="សូមអញ្ជើញចូលរួមឱ្យបានទាន់ពេលវេលា ដើម្បីជាសាក្សីនៃកម្មវិធីមង្គលរបស់យើង">សូមអញ្ជើញចូលរួមឱ្យបានទាន់ពេលវេលា
+        ដើម្បីជាសាក្សីនៃកម្មវិធីមង្គលរបស់យើង</p>
+
+      <div class="timeline">
+        <!-- Event milestone 1 -->
+        <div class="timeline-item reveal-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-time" data-en="06:30 AM" data-km="០៦:៣០ ព្រឹក">០៦:៣០ ព្រឹក</span>
+          <div class="timeline-card">
+            <h4 class="timeline-title" data-en="Guest Arrival & Welcome" data-km="ជួបជុំភ្ញៀវ និងរៀបចំក្បួនហែជំនូន">
+              ជួបជុំភ្ញៀវ និងរៀបចំក្បួនហែជំនូន</h4>
+          </div>
+        </div>
+
+        <!-- Event milestone 2 -->
+        <div class="timeline-item reveal-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-time" data-en="07:00 AM" data-km="០៧:០០ ព្រឹក">០៧:០០ ព្រឹក</span>
+          <div class="timeline-card">
+            <h4 class="timeline-title" data-en="Traditional Wedding Ceremony" data-km="ពិធីហែជំនូន និងពិធីសំពះផ្ទឹម">
+              ពិធីហែជំនូន និងពិធីសំពះផ្ទឹម</h4>
+          </div>
+        </div>
+
+        <!-- Event milestone 3 -->
+        <div class="timeline-item reveal-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-time" data-en="11:00 AM" data-km="១១:០០ ថ្ងៃត្រង់">១១:០០ ថ្ងៃត្រង់</span>
+          <div class="timeline-card">
+            <h4 class="timeline-title" data-en="Lunch Reception" data-km="អញ្ជើញភ្ញៀវកិត្តិយសពិសាអាហារថ្ងៃត្រង់">
+              អញ្ជើញភ្ញៀវកិត្តិយសពិសាអាហារថ្ងៃត្រង់</h4>
+          </div>
+        </div>
+
+        <!-- Event milestone 4 -->
+        <div class="timeline-item reveal-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-time" data-en="05:00 PM" data-km="០៥:០០ ល្ងាច">០៥:០០ ល្ងាច</span>
+          <div class="timeline-card">
+            <h4 class="timeline-title" data-en="Dinner Reception" data-km="អញ្ជើញភ្ញៀវកិត្តិយសពិសាអាហារពេលល្ងាច">
+              អញ្ជើញភ្ញៀវកិត្តិយសពិសាអាហារពេលល្ងាច</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- LOVE STORY CAROUSEL SECTION -->
+    <section id="story-section" class="reveal-item">
+      <h3 class="section-title" data-en="Our Love Story" data-km="រឿងរ៉ាវស្នេហារបស់យើង">រឿងរ៉ាវស្នេហារបស់យើង</h3>
+      <p class="section-subtitle" data-en="Highlights of our memorable steps that brought us here."
+        data-km="ពេលវេលាដ៏មានន័យនៃការរួមដំណើរ ដែលនាំឱ្យយើងមកដល់ថ្ងៃនេះ">ពេលវេលាដ៏មានន័យនៃការរួមដំណើរ
+        ដែលនាំឱ្យយើងមកដល់ថ្ងៃនេះ</p>
+
+      <div class="carousel-wrapper">
+        <button id="story-prev" class="carousel-nav-btn" aria-label="Previous slide">‹</button>
+        <div id="story-carousel-track">
+          <!-- Populated dynamically by script.js -->
+        </div>
+        <button id="story-next" class="carousel-nav-btn" aria-label="Next slide">›</button>
+      </div>
+    </section>
+
+    <!-- PHOTO GALLERY SECTION -->
+    <section id="gallery-section" class="reveal-item">
+      <h3 class="section-title" data-en="Photo Gallery" data-km="កម្រងរូបភាព">កម្រងរូបភាព</h3>
+      <p class="section-subtitle" data-en="Captured moments of our joy and love."
+        data-km="រូបភាពអនុស្សាវរីយ៍ដ៏មានន័យនៃក្តីស្រលាញ់របស់ពួកយើង">រូបភាពអនុស្សាវរីយ៍ដ៏មានន័យនៃក្តីស្រលាញ់របស់ពួកយើង
+      </p>
+
+      <div id="gallery-grid" class="gallery-grid">
+        <!-- Populated dynamically by script.js -->
+      </div>
+    </section>
+
+    <!-- DRESS CODE COLOR CHART -->
+    <section id="dresscode-section" class="reveal-item">
+      <div class="invitation-card">
+        <h3 class="section-title" data-en="Dress Code" data-km="ពណ៌សម្លៀកបំពាក់">ពណ៌សម្លៀកបំពាក់</h3>
+        <p class="section-subtitle" style="margin-bottom: 20px;"
+          data-en="We recommend guests to wear matching colors for beautiful group photos."
+          data-km="ដើម្បីភាពស្រស់ស្អាតក្នុងកម្មវិធី ភ្ញៀវកិត្តិយសអាចជ្រើសរើសពណ៌សម្លៀកបំពាក់ដូចខាងក្រោម៖">
+          ដើម្បីភាពស្រស់ស្អាតក្នុងកម្មវិធី ភ្ញៀវកិត្តិយសអាចជ្រើសរើសពណ៌សម្លៀកបំពាក់ដូចខាងក្រោម៖</p>
+
+        <div class="colors-grid">
+          <div class="color-swatch-wrapper">
+            <div class="color-swatch" style="background-color: #7A8B6F;"></div>
+            <span class="color-label" data-en="Sage Green" data-km="បៃតងខ្ចី">បៃតងខ្ចី</span>
+          </div>
+          <div class="color-swatch-wrapper">
+            <div class="color-swatch" style="background-color: #C47B7B;"></div>
+            <span class="color-label" data-en="Dusty Rose" data-km="ផ្កាឈូកក្រៀម">ផ្កាឈូកក្រៀម</span>
+          </div>
+          <div class="color-swatch-wrapper">
+            <div class="color-swatch" style="background-color: #B8944C;"></div>
+            <span class="color-label" data-en="Gilded Gold" data-km="ពណ៌មាស">ពណ៌មាស</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BANK REGISTRY / BLESSING QR CODE SECTION -->
+    <section id="registry-section" class="reveal-item">
+      <h3 class="section-title" data-en="Wedding Blessing" data-km="ចងដៃពរជ័យ">ចងដៃពរជ័យ</h3>
+      <p class="section-subtitle"
+        data-en="Your presence is our greatest gift. If you wish to send a blessing gift digitally, you can scan the QR code below."
+        data-km="វត្តមានរបស់លោកអ្នកគឺជាកាដូដ៏មានតម្លៃបំផុតសម្រាប់យើង។ ប្រសិនបើលោកអ្នកចង់ផ្ញើពរជ័យតាមរយៈឌីជីថល លោកអ្នកអាចស្កេនកូដខាងក្រោមបាន៖">
+        វត្តមានរបស់លោកអ្នកគឺជាកាដូដ៏មានតម្លៃបំផុតសម្រាប់យើង។ ប្រសិនបើលោកអ្នកចង់ផ្ញើពរជ័យតាមរយៈឌីជីថល
+        លោកអ្នកអាចស្កេនកូដខាងក្រោមបាន៖</p>
+
+      <div class="registry-card">
+        <div class="qr-code-container">
+          <img id="registry-qr" src="" alt="Scan QR to Bless" />
+        </div>
+        <div class="bank-info">
+          <p class="bank-label" data-en="Bank Account" data-km="គណនីធនាគារ">គណនីធនាគារ</p>
+          <p id="val-bank-name" class="bank-value" data-en="ABA Bank" data-km="ធនាគារ ABA">ធនាគារ ABA</p>
+
+          <p class="bank-label" data-en="Account Name" data-km="ឈ្មោះគណនី">ឈ្មោះគណនី</p>
+          <p id="val-account-name" class="bank-value" data-en="RITHY SAMNANG" data-km="ហេង សិរីម៉ានុត">ហេង សិរីម៉ានុត
+          </p>
+
+          <p class="bank-label" data-en="Account Number" data-km="លេខគណនី">លេខគណនី</p>
+          <p id="val-account-number" class="acc-num">000 123 456</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- RSVP RESPONSE FORM SECTION -->
+    <section id="rsvp-section" class="reveal-item">
+      <div class="invitation-card">
+        <h3 class="section-title" data-en="RSVP" data-km="ឆ្លើយតបការអញ្ជើញ">ឆ្លើយតបការអញ្ជើញ</h3>
+        <p class="section-subtitle" data-en="Please let us know your attendance status before June 15, 2026."
+          data-km="សូមមេត្តាឆ្លើយតបការចូលរួមរបស់លោកអ្នក មុនថ្ងៃទី ១៥ មិថុនា ២០២៦។">សូមមេត្តាឆ្លើយតបការចូលរួមរបស់លោកអ្នក
+          មុនថ្ងៃទី ១៥ មិថុនា ២០២៦។</p>
+
+        <form id="rsvp-form" class="rsvp-form">
+          <div class="form-group">
+            <label for="rsvp-name" class="form-label" data-en="Your Full Name"
+              data-km="ឈ្មោះពេញរបស់លោកអ្នក">ឈ្មោះពេញរបស់លោកអ្នក</label>
+            <input type="text" id="rsvp-name" class="form-input" required placeholder="សូមបញ្ចូលឈ្មោះរបស់អ្នក"
+              data-en="Please enter your name" data-km="សូមបញ្ចូលឈ្មោះរបស់អ្នក" />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" data-en="Will you attend?"
+              data-km="តើលោកអ្នកអាចចូលរួមបានទេ?">តើលោកអ្នកអាចចូលរួមបានទេ?</label>
+            <div class="radio-group">
+              <label class="radio-option">
+                <input type="radio" name="rsvp-attendance" value="yes" checked />
+                <div class="radio-tile">
+                  <span data-en="Yes, I'll attend" data-km="បាទ/ចាស ខ្ញុំនឹងចូលរួម">បាទ/ចាស ខ្ញុំនឹងចូលរួម</span>
+                </div>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="rsvp-attendance" value="no" />
+                <div class="radio-tile">
+                  <span data-en="Sorry, I can't" data-km="សោកស្តាយ មិនអាចចូលរួម">សោកស្តាយ មិនអាចចូលរួម</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="rsvp-guests" class="form-label" data-en="Number of Guests"
+              data-km="ចំនួនភ្ញៀវចូលរួម">ចំនួនភ្ញៀវចូលរួម</label>
+            <select id="rsvp-guests" class="form-input">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="rsvp-message" class="form-label" data-en="Wishes / Blessing Messages"
+              data-km="ពាក្យជូនពរ">ពាក្យជូនពរ</label>
+            <textarea id="rsvp-message" class="form-input" rows="4" placeholder="សូមសរសេរពាក្យជូនពរនៅទីនេះ..."
+              data-en="Write your wishes here..." data-km="សូមសរសេរពាក្យជូនពរនៅទីនេះ..."></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn" data-en="Submit Response"
+            data-km="បញ្ជូនការឆ្លើយតប">បញ្ជូនការឆ្លើយតប</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- LOCATION MAP SECTION -->
+    <section id="map-section" class="reveal-item">
+      <h3 class="section-title" data-en="Venue Location" data-km="ទីតាំងកម្មវិធី">ទីតាំងកម្មវិធី</h3>
+      <p class="section-subtitle" data-en="We can't wait to see you at the celebration venue!"
+        data-km="យើងទន្ទឹងរង់ចាំជួបលោកអ្នកនៅទីតាំងកម្មវិធី!">យើងទន្ទឹងរង់ចាំជួបលោកអ្នកនៅទីតាំងកម្មវិធី!</p>
+
+      <div class="map-card">
+        <div class="map-container">
+          <iframe id="map-iframe" src="" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="map-info">
+          <h4 id="val-venue" class="venue-name serif-text" data-en="OCIC Wedding Plaza"
+            data-km="មជ្ឈមណ្ឌលពិព័រណ៍ និងសន្និបាត OCIC">មជ្ឈមណ្ឌលពិព័រណ៍ និងសន្និបាត OCIC</h4>
+          <p id="val-address" class="venue-address" data-en="Building A, Chroy Changvar, Phnom Penh"
+            data-km="អគារ A, ជ្រោយចង្វារ, ភ្នំពេញ">អគារ A, ជ្រោយចង្វារ, ភ្នំពេញ</p>
+          <a id="map-directions-btn" href="" target="_blank" class="directions-btn">
+            <span>📍</span>
+            <span data-en="Get Directions" data-km="មើលផែនទីបង្ហាញផ្លូវ">មើលផែនទីបង្ហាញផ្លូវ</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIGNATURE FOOTER -->
+    <footer>
+      <p data-en="Designed with love • 2026" data-km="រៀបចំឡើងដោយក្តីស្រលាញ់ • ២០២៦">រៀបចំឡើងដោយក្តីស្រលាញ់ • ២០២៦</p>
+    </footer>
+
+  </main>
+
+  <!-- 5. PHOTO GALLERY LIGHTBOX OVERLAY -->
+  <div id="gallery-lightbox" aria-hidden="true" role="dialog">
+    <button id="lightbox-close" class="lightbox-btn" aria-label="Close Lightbox">×</button>
+    <div class="lightbox-content-wrapper">
+      <button id="lightbox-prev" class="lightbox-btn" aria-label="Previous photo">‹</button>
+      <img id="lightbox-img" src="" alt="Enlarged gallery photo" />
+      <button id="lightbox-next" class="lightbox-btn" aria-label="Next photo">›</button>
+    </div>
+  </div>
+
+  <!-- 6. RSVP SUCCESS MODAL -->
+  <div id="rsvp-success-modal" aria-hidden="true" role="dialog">
+    <div class="modal-content">
+      <div class="modal-icon">♥</div>
+      <h4 id="modal-title" class="modal-title serif-text" data-en="Thank You!" data-km="សូមអរគុណ!">សូមអរគុណ!</h4>
+      <p id="modal-desc" class="modal-desc" data-en="Your response has been saved."
+        data-km="ការឆ្លើយតបរបស់អ្នកត្រូវបានកត់ត្រាទុក។">ការឆ្លើយតបរបស់អ្នកត្រូវបានកត់ត្រាទុក។</p>
+      <button id="modal-ok-btn" class="modal-btn" data-en="Close" data-km="បិទ">បិទ</button>
+    </div>
+  </div>
+
+  <!-- 7. BACKGROUND MUSIC AUDIO TAG -->
+  <audio id="bg-music" loop></audio>
+
+  <!-- Script Execution -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
